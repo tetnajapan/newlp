@@ -4,66 +4,93 @@
   <meta charset="UTF-8">
   <title>夜間・緊急対応OK｜原状回復LP</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: sans-serif;
-      background: #f7f7f7;
-      padding: 20px;
-      line-height: 1.6;
+      font-family: 'Helvetica', sans-serif;
+      background-color: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
-
-    .main-image {
-      width: 100%;
-      max-width: 800px;
+    .hero {
+      background: url('https://raw.githubusercontent.com/tetnajapan/newlp/main/banner.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
       border-radius: 10px;
-      margin-bottom: 20px;
     }
-
-    h1 {
-      color: #222;
-    }
-
     .button {
       display: inline-block;
-      padding: 12px 24px;
-      background: #0097FF;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
+      margin-top: 20px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #007BFF;
+      border-radius: 5px;
       text-decoration: none;
-      font-weight: bold;
-      margin: 10px 0;
     }
-
-    .status {
-      padding: 10px;
-      background: #fff;
-      border-left: 6px solid #FFA500;
+    .section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .section h2 {
+      margin-bottom: 15px;
+      color: #007BFF;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li {
       margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
 
-  <img src="https://github.com/tetnajapan/LP/raw/main/hero.jpg" alt="サービスのイメージ画像" class="main-image">
+  <section class="hero">
+    <div>
+      <h1>夜間・緊急対応OK！<br>原状回復のプロが今すぐ駆けつけます</h1>
+      <a href="https://forms.gle/your_google_form_url" target="_blank" class="button">今すぐ無料で相談する</a>
+    </div>
+  </section>
 
-  <h1>夜間・緊急対応OK！<br>原状回復のプロが今すぐ駆けつけます</h1>
-  <p>リペア工事／ダイノックシート貼替<br>急ぎのご依頼に特化した即日施工サービス</p>
+  <section class="section">
+    <h2>本日の対応状況</h2>
+    <ul>
+      <li>リペア工事：データ取得中...</li>
+      <li>ダイノック貼替：データ取得中...</li>
+    </ul>
+  </section>
 
-  <a class="button" href="https://forms.gle/your_google_form_url" target="_blank">今すぐ無料で相談する</a>
-
-  <h2>本日の対応状況</h2>
-  <div class="status" id="repairStatus">リペア工事：データ取得中...</div>
-  <div class="status" id="dynockStatus">ダイノック貼替：データ取得中...</div>
-
-  <h2>料金案内</h2>
-  <ul>
-    <li>リペア工事：¥15,000〜</li>
-    <li>ダイノック貼替：¥25,000〜</li>
-    <li>夜間対応料：+¥5,000</li>
-    <li>緊急対応料：+¥5,000</li>
-    <li>資材引取代行：+¥3,000〜</li>
-  </ul>
+  <section class="section">
+    <h2>料金案内</h2>
+    <ul>
+      <li>リペア工事：¥15,000〜</li>
+      <li>ダイノック貼替：¥25,000〜</li>
+      <li>夜間対応料：+¥5,000</li>
+      <li>緊急対応料：+¥5,000</li>
+      <li>資材引取代行：+¥3,000〜</li>
+    </ul>
+  </section>
 
 </body>
 </html>
