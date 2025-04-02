@@ -7,6 +7,7 @@
     body {
       margin: 0;
       font-family: sans-serif;
+      background-color: #f5f5f5;
     }
 
     .hero {
@@ -16,7 +17,8 @@
 
     .hero-img {
       width: 100%;
-      height: auto;
+      height: 500px;
+      object-fit: cover;
       display: block;
     }
 
@@ -57,18 +59,15 @@
     .hero-overlay a:hover {
       background-color: #0056b3;
     }
-  </style>
-</head>
-<body>
 
-  <section class="hero">
-    <img class="hero-img" src="https://github.com/tetnajapan/newlp/raw/main/banner.jpg" alt="サービスのイメージ画像">
-    <div class="hero-overlay">
-      <h1>夜間・緊急対応OK！</h1>
-      <p>原状回復のプロが今すぐ駆けつけます</p>
-      <a href="https://forms.gle/your_form_url" target="_blank">今すぐ無料で相談する</a>
-    </div>
-  </section>
+    .content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
 
-</body>
-</html>
+    .content h2 {
+      border-left: 6px solid #007b
