@@ -10,26 +10,40 @@
     }
 
     .hero {
-      background: url('https://github.com/tetnajapan/newlp/raw/main/banner.jpg') no-repeat center center/cover;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
       position: relative;
+      text-align: center;
     }
 
-    .hero h1 {
+    .hero-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 20px;
+      border-radius: 8px;
+      color: white;
+      width: 90%;
+      max-width: 600px;
+    }
+
+    .hero-overlay h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
-      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
-    .hero p {
+    .hero-overlay p {
       font-size: 1.2em;
       margin-bottom: 20px;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     }
 
-    .hero a {
+    .hero-overlay a {
       display: inline-block;
       padding: 15px 30px;
       font-size: 1.2em;
@@ -40,7 +54,7 @@
       box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     }
 
-    .hero a:hover {
+    .hero-overlay a:hover {
       background-color: #0056b3;
     }
   </style>
@@ -48,9 +62,12 @@
 <body>
 
   <section class="hero">
-    <h1>夜間・緊急対応OK！</h1>
-    <p>原状回復のプロが今すぐ駆けつけます</p>
-    <a href="https://forms.gle/your_form_url" target="_blank">今すぐ無料で相談する</a>
+    <img class="hero-img" src="https://github.com/tetnajapan/newlp/raw/main/banner.jpg" alt="サービスのイメージ画像">
+    <div class="hero-overlay">
+      <h1>夜間・緊急対応OK！</h1>
+      <p>原状回復のプロが今すぐ駆けつけます</p>
+      <a href="https://forms.gle/your_form_url" target="_blank">今すぐ無料で相談する</a>
+    </div>
   </section>
 
 </body>
