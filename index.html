@@ -271,13 +271,17 @@
 <!-- ⑤「職人の空き状況」 -->
 <section style="background-color: #333; padding: 50px 20px; text-align: center; color: #fff;">
   <h2 style="font-size: 30px; font-weight: bold;">職人の空き状況</h2>
-  <!-- Googleスプレッドシートなどの埋め込みスペース -->
+
   <div style="margin-top: 30px;">
-    <!-- ここにiframeなどでスプレッドシートを挿入 -->
-    <!-- 例：
-    <iframe src="https://docs.google.com/spreadsheets/d/スプレッドシートID/preview" width="100%" height="300"></iframe>
-    -->
-    <p>※ここに職人の空き状況を表示します（後でスプレッドシート連携）</p>
+    <!-- ✅ Googleフォーム埋め込み -->
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfmEdau6AQHUHgFL9Qtcys9rrq3UV4_vJNVZCjTMdS0UNoBRg/viewform?embedded=true"
+      width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0"
+      style="background-color: white; border-radius: 10px;">
+      読み込んでいます…
+    </iframe>
+
+    <!-- 補足説明 -->
     <p style="color: #fff; font-size: 16px; margin-top: 20px;">
       空き状況が「×」でも、一度ご連絡ください。<br>
       職人の調整次第で当日対応できる場合もございます。
